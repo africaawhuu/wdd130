@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitewater Rapids Rafting</title>
+    <meta name="description"
+      content="Get in touch with Whitewater Rapids Rafting. Contact our team, locate our office, submit inquiries, or request trip information.">
+    <meta name="author" content="Africaawhuu E'dahunsi">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-wwr-oars.png" alt="Whitewater Rapids Rafting Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- Company Information & Google Map -->
+        <section class="company-info">
+            <h2>Get in Touch</h2>
+            <div class="info-details">
+                <p><strong>Address:</strong> 123 Rapid River Way, Boise, ID 83702</p>
+                <p><strong>Phone:</strong> (208) 555-0199</p>
+                <p><strong>Email:</strong> info@whitewaterrapids.com</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184852.12879339343!2d-116.3262615!3d43.613739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef170e9f712cd%3A0x2d1f7c706859e3a!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                  width="100%" height="300" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Whitewater Rapids Office Location">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Employee Profiles -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Jenkins, Lead River Guide">
+                    <figcaption>
+                        <strong>Sarah Jenkins</strong>
+                        <span>Lead River Guide</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Marcus Vance, Operations Manager">
+                    <figcaption>
+                        <strong>Marcus Vance</strong>
+                        <span>Operations Manager</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Elena Rodriguez, Safety Coordinator">
+                    <figcaption>
+                        <strong>Elena Rodriguez</strong>
+                        <span>Safety Coordinator</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-item">
+                    <label for="username">Full Name:</label>
+                    <input type="text" id="username" name="username" required
+                      placeholder="Jane Doe">
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email Address:</label>
+                    <input type="email" id="useremail" name="useremail" required
+                      placeholder="jane@example.com">
+                </div>
+
+                <fieldset class="form-item radio-group">
+                    <legend>Purpose of Message:</legend>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="usermessage">Message:</label>
+                    <textarea id="usermessage" name="usermessage" rows="5" required
+                      placeholder="How can we help you?"></textarea>
+                </div>
+
+                <div class="form-item checkbox-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Whitewater Rapids Rafting | Africaawhuu E'dahunsi</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook-square.svg" alt="Facebook Icon" width="30">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin-square.svg" alt="LinkedIn Icon" width="30">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram-square.svg" alt="Instagram Icon" width="30">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

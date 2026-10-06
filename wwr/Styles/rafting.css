@@ -1,3 +1,19 @@
+/* ===================================
+   GLOBAL & RESET STYLES
+   =================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
 /* Header Layout: CSS Grid */
 header {
     display: grid;
@@ -9,6 +25,7 @@ header {
 
 header .logo {
     width: 120px;
+    height: auto;
 }
 
 /* Navigation Layout: CSS Flexbox */
@@ -26,10 +43,20 @@ header nav a {
     padding: 0.5rem;
 }
 
-/* Adventures Gallery Layout: 5 Columns Grid */
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Adventures Gallery Layout */
+.adventures {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -40,6 +67,7 @@ header nav a {
     border: 1px solid #e2e8f0;
     border-radius: 4px;
     overflow: hidden;
+    margin: 0;
 }
 
 .adventure-gallery img {
@@ -53,10 +81,10 @@ header nav a {
     padding: 0.5rem;
     font-weight: bold;
     font-size: 0.85rem;
-    color: #2d3748;
+    color: #1a202c;
 }
 
-/* Footer Layout: Flexbox aligned to the right */
+/* Footer Layout */
 footer {
     display: flex;
     justify-content: space-between;
@@ -64,9 +92,159 @@ footer {
     background-color: #1a365d;
     color: #ffffff;
     padding: 1rem 2rem;
+    margin-top: 2rem;
 }
 
 footer .socialmedia {
     display: flex;
     gap: 1rem;
+}
+
+/* ===================================
+   CONTACT PAGE STYLES
+   =================================== */
+
+main h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Company Information & Google Map */
+.company-info {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: #f4f8fb;
+    border-radius: 8px;
+}
+
+.info-details {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Employee Profiles Gallery */
+.employees {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.employee-gallery figure {
+    margin: 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.employee-gallery figcaption {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.employee-gallery figcaption strong {
+    color: #1a365d;
+}
+
+.employee-gallery figcaption span {
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+/* Contact Form */
+.contact-form-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-item label,
+.radio-group legend {
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.radio-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 0.85rem 1.5rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0d1b2a;
 }
