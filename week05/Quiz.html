@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W05 Code-along: HTML & CSS Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML and CSS Knowledge Quiz</h1>
+    </header>
+
+    <main>
+        <form>
+            <!-- Question 1: Text Input (Fill in the blank) -->
+            <div class="quiz-item">
+                <label for="q1">1. What HTML element is used to create a hyperlink on a
+                    webpage?</label>
+                <input type="text" id="q1" name="q1" placeholder="e.g., <p>, <a>, <div>" required>
+            </div>
+
+            <!-- Question 2: Textarea (Short answer) -->
+            <div class="quiz-item">
+                <label for="q2">2. Explain the difference between margin and padding in CSS:</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Type your short answer here..."
+                  required></textarea>
+            </div>
+
+            <!-- Question 3: Select (Dropdown) -->
+            <div class="quiz-item">
+                <label for="q3">3. Which CSS layout method is designed for one-dimensional
+                    layouts?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="flexbox">Flexbox</option>
+                    <option value="grid">CSS Grid</option>
+                    <option value="float">Floats</option>
+                    <option value="inline">Inline-Block</option>
+                </select>
+            </div>
+
+            <!-- Question 4: Number Input (Integer answer) -->
+            <div class="quiz-item">
+                <label for="q4">4. How many heading levels exist in HTML (from h1 to h6)?</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" placeholder="Enter a number"
+                  required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | HTML &amp; CSS Quiz Activity | WDD 130</p>
+    </footer>
+</body>
+
+</html>
