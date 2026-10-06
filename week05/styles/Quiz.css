@@ -1,112 +1,98 @@
-/* CSS Reset & Universal Settings */
+/* Universal Box Sizing */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1rem;
-    color: #2b2b2b;
-    background-color: #f4f6f8;
-    padding: 2rem 1rem;
-    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #f4f6f9;
+    color: #222;
 }
 
-/* Header Styling */
 header {
-    max-width: 600px;
-    margin: 0 auto 1.5rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 h1 {
-    font-family: 'Merriweather', Georgia, serif;
-    font-size: 1.8rem;
-    color: #1a365d;
+    color: #003366;
+    font-size: 2rem;
 }
 
-/* Form Container Styling */
-form {
-    max-width: 600px;
+main {
+    max-width: 550px;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 2rem;
-    border: 1px solid #cbd5e1;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Single Column Form Layout */
+form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-/* Quiz Item Single-Column Container */
-.quiz-item {
+.form-item {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
 label {
-    font-weight: 500;
-    color: #1e293b;
+    font-weight: bold;
+    color: #111;
 }
 
-/* Input, Select, and Textarea Controls */
 input[type="text"],
 input[type="number"],
-select,
-textarea {
+textarea,
+select {
     width: 100%;
-    padding: 0.65rem 0.85rem;
-    font-size: 0.95rem;
+    padding: 0.75rem;
+    font-size: 1rem;
     font-family: inherit;
-    border: 1px solid #94a3b8;
+    border: 1px solid #aaa;
     border-radius: 4px;
-    background-color: #f8fafc;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 input[type="text"]:focus,
 input[type="number"]:focus,
-select:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: none;
-    border-color: #2563eb;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
 }
 
 textarea {
     resize: vertical;
 }
 
-/* Submit Button Styling */
 button[type="submit"] {
-    background-color: #1a365d;
+    background-color: #003366;
     color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 700;
     padding: 0.85rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
 }
 
 button[type="submit"]:hover {
-    background-color: #1e40af;
+    background-color: #002244;
 }
 
-/* Footer Styling */
 footer {
-    max-width: 600px;
-    margin: 2rem auto 0;
     text-align: center;
-    font-size: 0.85rem;
-    color: #64748b;
-    border-top: 1px solid #e2e8f0;
-    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
 }
