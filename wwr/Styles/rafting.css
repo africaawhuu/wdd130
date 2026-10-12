@@ -275,6 +275,8 @@ main h1 {
     padding: 20px 40px;
     border-radius: 8px;
     font-size: 2.5rem;
+    width: 80%;
+    max-width: 600px;
 }
 
 /* Grids for Home & Trips Pages */
@@ -388,34 +390,4 @@ main h1 {
 
 .newsletter button:hover {
     background-color: #0d1b2a;
-}
-
-/* Hero Section Styling */
-.hero {
-    position: relative;
-    /* This is crucial so the absolute h1 positions relative to this container */
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero h1 {
-    position: absolute;
-    /* Positions the heading on top of the hero image */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Centers the heading perfectly */
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Adds a dark transparent overlay for readability */
-    color: white;
-    padding: 20px 40px;
-    border-radius: 8px;
-    font-size: 2.5rem;
-    width: 80%;
-    max-width: 600px;
 }
