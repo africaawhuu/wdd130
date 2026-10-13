@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Available Trips | Dry Oar Rafting</title>
+
     <meta name="description"
       content="Browse our exciting whitewater rafting adventures, view trip details, compare itineraries, and book your trip today.">
-    <link rel="stylesheet" href="styles/rafting.css">
+
+    <link rel="stylesheet" href="Styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Dry Oar Logo">
+        <img src="Images/z-boat.png" alt="Boat">
+
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -22,58 +26,73 @@
     </header>
 
     <main>
-        <!-- CTA to Contact Page -->
-        <section class="trips-cta-banner">
+        <!-- Call to Action -->
+        <section class="trips-header">
+            <h1>Plan Your Next Rafting Adventure</h1>
+
             <h2>Have Questions About Our Adventures?</h2>
-            <p>Our team is ready to help you plan your custom trip or group event.</p>
+
+            <p>
+                Our team is ready to help you plan your custom trip or group event.
+            </p>
+
             <a href="contact.html" class="cta-button">Contact Us Today</a>
         </section>
 
-        <!-- Detailed Trip Descriptions -->
-        <section class="trip-details">
+        <!-- Featured Rafting Adventures -->
+        <section class="trip-details-grid">
             <h2>Featured Rafting Adventures</h2>
 
-            <div class="trip-card">
-                <img src="images/salmon-river.jpg" alt="Salmon River trip">
-                <div class="trip-info">
-                    <h3>Salmon River Expedition</h3>
-                    <p>Experience 4 days of breathtaking wilderness, deep canyons, and exciting
-                        Class III-IV rapids. Perfect for intermediate adventurers looking for an
-                        unforgettable escape.</p>
-                </div>
-            </div>
+            <article class="trip-card">
+                <img src="Images/rafting10_1024.jpg" alt="Rafting adventure on the Salmon River">
 
-            <div class="trip-card">
-                <img src="images/snake-river.jpg" alt="Snake River trip">
-                <div class="trip-info">
-                    <h3>Snake River Sprint</h3>
-                    <p>A high-energy, half-day trip packed with steep drops and massive rollers.
-                        Ideal for families and thrill-seekers short on time.</p>
-                </div>
-            </div>
+                <h3>Salmon River Expedition</h3>
 
-            <div class="trip-card">
-                <img src="images/grand-canyon.jpg" alt="Grand Canyon trip">
-                <div class="trip-info">
-                    <h3>Grand Canyon Odyssey</h3>
-                    <p>The ultimate multi-day bucket-list journey down legendary rapids through
-                        historic red rock canyons with expert naturalist guides.</p>
-                </div>
-            </div>
+                <p>
+                    Experience 4 days of breathtaking wilderness, deep canyons, and exciting
+                    Class III-IV rapids. Perfect for intermediate adventurers looking for an
+                    unforgettable escape.
+                </p>
+            </article>
+
+            <article class="trip-card">
+                <img src="Images/rafting36_1024.jpg" alt="Rafting adventure on the Snake River">
+
+                <h3>Snake River Sprint</h3>
+
+                <p>
+                    A high-energy, half-day trip packed with steep drops and massive rollers.
+                    Ideal for families and thrill-seekers short on time.
+                </p>
+            </article>
+
+            <article class="trip-card">
+                <img src="Images/rafting59_600.jpg" alt="Rafting through the Grand Canyon">
+
+                <h3>Grand Canyon Odyssey</h3>
+
+                <p>
+                    The ultimate multi-day bucket-list journey down legendary rapids through
+                    historic red rock canyons with expert naturalist guides.
+                </p>
+            </article>
         </section>
 
-        <!-- Trip Summary Table -->
-        <section class="trip-table-section">
+        <!-- Trip Comparison Table -->
+        <section class="trips-table-section">
             <h2>Trip Comparison Overview</h2>
-            <table>
+
+            <table class="trips-table">
                 <thead>
                     <tr>
                         <th>Trip Name</th>
                         <th>Duration</th>
                         <th>Difficulty</th>
                         <th>Price</th>
+                        <img src="Images/rafting10_1024.jpg" alt="Rafting">
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
                         <td>Salmon River Expedition</td>
@@ -81,12 +100,14 @@
                         <td>Intermediate (Class III-IV)</td>
                         <td>$850</td>
                     </tr>
+
                     <tr>
                         <td>Snake River Sprint</td>
                         <td>Half Day</td>
                         <td>Beginner/Moderate (Class II-III)</td>
                         <td>$120</td>
                     </tr>
+
                     <tr>
                         <td>Grand Canyon Odyssey</td>
                         <td>7 Days</td>
@@ -100,13 +121,19 @@
 
     <footer>
         <p>&copy; 2026 Dry Oar Rafting | Designed by Student</p>
+
         <nav class="sociallinks">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"
-                  alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg"
-                  alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg"
-                  alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="Images/facebook-square.svg" alt="Facebook">
+            </a>
+
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="Images/youtube.png" alt="Youtube">
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="Images/instagram-square.svg" alt="Instagram">
+            </a>
         </nav>
     </footer>
 </body>
