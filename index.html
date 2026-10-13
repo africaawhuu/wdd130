@@ -1,58 +1,92 @@
-<!--20 September 2026-->
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Africaawhuu E'dahunsi | WDD 130</title>
-    <meta name="description" content="Africaawhuu E'dahunsi's BYU-Idaho WDD 130 course home page">
-    <meta name="Author" content="Africaawhuu E'dahunsi">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Whitewater Rafting Home | Dry Oar Rafting</title>
+    <meta name="description"
+      content="Experience the thrill of whitewater rafting with Dry Oar Rafting. Book your adventure, check out our trips, and join our newsletter today!">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
+        <img src="images/logo.png" alt="Dry Oar Logo">
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">Siteplan</a>
-            <a href="https://www.linkedin.com/in/africaawhuu-e-dahunsi-46b6423ab" target="_blank"
-              rel="noopener">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h1>Africaawhuu E'dahunsi | WDD 130</h1>
-        <img src="my passport photogragh.jpeg" alt="Hello, my name is Africaawhuu E'dahunsi"
-          width="200">
-        <p>Hello! My name is Africaawhuu E'dahunsi and I am from Lagos, Nigeria. I am a herbal
-            medicine practitioner.
-            My herbal skill or ability is built on the ancient knowledge of the Yoruba herbs and
-            roots. I love helping
-            people in my own little way, and I also enjoy solving problems. I like visiting new
-            places and meeting different people. I love mathematics, football, and boxing</p>
+        <!-- Hero Section with Absolute Positioned Heading -->
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rafting adventure on rushing river">
+            <h1>Dive Into Adventure</h1>
+            <article>
+                <img src="images/happy-client.jpg" alt="Happy client smiling">
+                <p>Dry Oar Rafting provides unforgettable, safe, and thrilling whitewater
+                    experiences for individuals, families, and groups. Join expert guides on the
+                    world's most breathtaking rivers!</p>
+            </article>
+        </div>
 
-        <aside class="box">
-            <h2>Lagos, Nigeria</h2>
-            <img src="lagos nigeria.jpg" alt="Lagos,Nigeria">
-            <p>The bridge you see is called the 3rd mainland bridge. It is the most popular bridge
-                in
-                Lagos State.</p>
-        </aside>
+        <!-- History / Purpose Section using CSS Grid -->
+        <section class="home-grid">
+            <h2>Our Mission & Offerings</h2>
+            <div class="grid-container">
+                <div class="grid-card">
+                    <img src="images/rafting-boat.jpg" alt="Rafting boat on water">
+                    <h3>Thrilling Expeditions</h3>
+                    <p>From calm scenic floats to intense Class V rapids, we cater to every level of
+                        adventure seeker.</p>
+                </div>
+                <div class="grid-card">
+                    <img src="images/rafting-gear.jpg" alt="Rafting equipment">
+                    <h3>Top-Tier Equipment</h3>
+                    <p>Your safety is our priority. We provide state-of-the-art life jackets, rafts,
+                        and professional guides.</p>
+                </div>
+            </div>
+        </section>
 
-        <ul class="box">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
-                  target="_blank" rel="noopener">Philadelphia Pennsylvania Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
-                  target="_blank" rel="noopener">Paris France Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/berlin-germany-temple"
-                  target="_blank" rel="noopener">Berlin Germany Temple</a></li>
+        <!-- Call to Action & Newsletter -->
+        <section class="cta-newsletter">
+            <div class="cta-box">
+                <h2>Ready for Your Next Journey?</h2>
+                <a href="trips.html" class="cta-button">Explore Our Trips</a>
+            </div>
 
-        </ul>
+            <div class="newsletter-box">
+                <h2>Sign Up For Our Newsletter</h2>
+                <form>
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="name" required placeholder="Your Name">
+
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="email" required
+                      placeholder="your.email@example.com">
+
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <p>&copy; 2026 Dry Oar Rafting | Designed by Student</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"
+                  alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg"
+                  alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg"
+                  alt="Instagram"></a>
+        </nav>
+    </footer>
 </body>
 
 </html>
